@@ -6,7 +6,9 @@ public class BankClient {
         Scanner scan = new Scanner(System.in);
         System.out.println("What is your preferred name?");
         String name = scan.nextLine();
-//        // Create a bank account with the given name and the account number 101134
-//        BankAccount account = new BankAccount(name, 101134);
+        BankAccount account = new BankAccount(1000000, 101134, name);
+        System.out.println("account number is" + account.getAccountNumber());
+        System.out.println("your name is " + account.getPreferredName());
+        System.out.println("your balance is " + account.getBalance());
     }
 }
